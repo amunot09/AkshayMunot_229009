@@ -1,0 +1,7 @@
+FROM node:12
+WORKDIR /awstest
+COPY package.json  /awstest
+RUN NPM Install
+COPY . /Awstest
+CMD run server.js
+EXPOSE 8000
